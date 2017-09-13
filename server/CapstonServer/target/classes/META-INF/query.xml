@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="sample">
+
+
+     
+    <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            SELECT
+                id,
+                name,
+                phone,
+                birthday
+            FROM
+                user_table
+        ]]>
+    </select>
+    <insert id="insertClientApps" parameterType="java.util.HashMap">
+        INSERT INTO client_apps (client_id , app_name , app_packageName) VALUES 
+        <foreach collection="list" item="item" separator=" , ">
+        	(#{item.client_id} , #{item.appName}, #{item.packageName})
+        </foreach>
+    </insert> 
+</mapper>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.changho.changholock.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="KidManagement"
+        android:id="@+id/textView"
+        android:layout_marginTop="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/access"
+        android:id="@+id/IMG_ACCESS"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/IMG_SEEING_APP" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/grayline"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/IMG_SEEING_APP"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="접근성 허용"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/IMG_ACCESS"
+        android:layout_alignEnd="@+id/IMG_ACCESS"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="잠긴 앱 보기"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/IMG_SEEING_APP"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="기기관리자 설정"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/IMG_DEVICE_MANAGER"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="Send img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendImg"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginEnd="23dp" />
+
+    <Button
+        android:text="SEND APP LIST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendAppList"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/sendImg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/seeingapp"
+        android:id="@+id/IMG_SEEING_APP"
+        android:layout_marginStart="32dp"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/devicemanager"
+        android:id="@+id/IMG_DEVICE_MANAGER"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/grayline2"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/IMG_SEEING_APP"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="앱 사용정보"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/pi"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/IMG_ACCESS"
+        android:layout_alignStart="@+id/sendAppList" />
+
+</RelativeLayout>

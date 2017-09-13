@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.changho.kidmanagement.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="앱 정보 가져오기 "
+        app:showAsAction="never" />
+    <item
+        android:title="서버와 동기화"
+        android:orderInCategory="101"
+        android:id="@+id/action_sync" />
+</menu>

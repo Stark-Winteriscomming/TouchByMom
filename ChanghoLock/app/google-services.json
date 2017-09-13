@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "56537588265",
+    "firebase_url": "https://changho-project.firebaseio.com",
+    "project_id": "changho-project",
+    "storage_bucket": "changho-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56537588265:android:ba412fa84bda995a",
+        "android_client_info": {
+          "package_name": "com.example.changho.changholock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56537588265-1n3naaarg28a40ehlsjl51i9kt77snut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIpBfcOOFzMAihoXwHwvC40tOeU8aPRV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

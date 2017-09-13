@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="시간 부여"
+        android:textSize="20dp"
+        android:typeface="sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView8" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/EDIT_HOURS"
+        android:text="0" />
+
+    <TextView
+        android:text="시"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EDIT_HOURS"
+        android:layout_toEndOf="@+id/EDIT_HOURS"
+        android:layout_marginStart="12dp"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:text="분"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:text="초"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toEndOf="@+id/EDIT_SECONDS"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView11" />
+
+    <Button
+        android:text="적용"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/APPLY_TIME"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/EDIT_MINUTES"
+        android:layout_marginEnd="11dp"
+        android:layout_above="@+id/APPLY_TIME"
+        android:layout_toStartOf="@+id/textView10"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/EDIT_SECONDS"
+        android:layout_marginStart="26dp"
+        android:layout_above="@+id/APPLY_TIME"
+        android:layout_toEndOf="@+id/textView10"
+        android:text="0" />
+</RelativeLayout>

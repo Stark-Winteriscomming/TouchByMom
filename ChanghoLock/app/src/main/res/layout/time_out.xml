@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/TIME_OUT_LISTVIEW"/>
+
+    <Button
+        android:text="나가기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BUTTON_EXIT"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:text="타겟 앱 사용시간"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:typeface="monospace"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/grayline"
+        android:layout_marginTop="32dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/grayline"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/BUTTON_EXIT"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
